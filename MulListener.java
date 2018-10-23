@@ -14,7 +14,7 @@ public class MulListener implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// perform multiplication after clicking the button
 		try {
-			DecimalFormat df = new DecimalFormat("0.00");
+			DecimalFormat df = new DecimalFormat("0.000");
 			double number1 = Double.parseDouble(L.tf[2][0].getText());
 			double number2 = Double.parseDouble(L.tf[2][1].getText());
 			L.tf[2][2].setText(df.format(number1 * number2));
